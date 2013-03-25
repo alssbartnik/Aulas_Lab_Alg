@@ -6,7 +6,9 @@ public class MinhaLista<T> implements Lista<T> {
 	
 	@Override	
 	public void adicionarFinal(T valor) {		
-		adicionarPosicao(obterTamanho(),valor);	}	
+		adicionarPosicao(obterTamanho(),valor);	
+	}
+	
 	@Override	
 	public void adicionarInicio(T valor) {		
 		adicionarPosicao(0, valor);	}	
@@ -16,7 +18,8 @@ public class MinhaLista<T> implements Lista<T> {
 		Nodo<T> novo = new Nodo<T>();		
 		nodo = obterNodoPosicao(posicao -1);		
 		novo.proximo = nodo.proximo;		
-		nodo.proximo = novo;		novo.conteudo = valor;	}	
+		nodo.proximo = novo;		
+		novo.conteudo = valor;	}	
 	@Override	
 	public T obterPrimeiro() {		
 		Nodo<T> nodo = null;		

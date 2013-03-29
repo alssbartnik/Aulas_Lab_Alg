@@ -10,7 +10,7 @@ public class ListaFactory {
 	public <T> Lista<T> criarLista() {
 		
 		Lista<T> resultado = null;		
-		resultado = new MinhaLista<T>();	
+		resultado = new MinhaLista<T>();
 		return resultado;
 	}
 	

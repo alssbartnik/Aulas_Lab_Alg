@@ -8,7 +8,7 @@ public class MinhaLista<T> implements Lista<T> {
 	@Override
 	public void adicionarFinal(T valor) {
 
-		adicionarPosicao(obterTamanho(), valor);
+		adicionarPosicao(obterTamanho(), valor);//lalala
 
 	}
 
